@@ -32,7 +32,7 @@ La base de datos utilizada para almancenar los registros y que estos no se perdi
 Para agilizar la creación del CRUD se utilizó el metodo Database First, haciendo que, una vez creada e implementada la base de datos, Entity Framework crea las clases, controladores y vistas bases automáticamente para trabajar con los datos desde la web de manera inmediata. 
 Esto permite hacer la creación de un back-end sencillo en poco tiempo y útil en muchas otras ocaciones. Sin embargo carece de validaciones de campos, por los que estos los tuve que hacer de manera manual en el archivo `Usuario.cs`, donde se encuentran los getter y setters.
 
-####validaciones
+#### validaciones
 Los campos se encuentran validados de la siguiente manera:
 - **Nombre** es un campo Requerido y debe contener al menos 2 caracteres, con un máximo de 50. 
 Cada incumplimiento de lo mencionado cuenta con su respectivo mensaje de error que se mostrará debajo del input en las vistas al ser activado. 
