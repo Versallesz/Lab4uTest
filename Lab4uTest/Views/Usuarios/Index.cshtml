@@ -8,7 +8,7 @@
 
 
 <section class="mb-5">
-    <div class="header-administrador col-12 mb-5">
+    <div class="header-administrador sombra-header col-12 mb-5">
         <h2 class="pb-2">Administrador de Usuarios</h2>
         
             <h5 class="float-left">Usuarios Disponibles</h5>
@@ -26,18 +26,18 @@
             @Html.DisplayNameFor(model => model.Correo)
         </div>
     </div>
-
+    <!--Trae cada usuario en usuarios-->
     @foreach (var item in Model)
     {
 
         <div class="container-usuarios mt-4 d-flex flex-wrap  align-items-center">
             
                 <div class="container-usuarios_info col-md-3 col-sm-6 ">
-                    <span class="align-middle d-md-none d-lg-none"><strong>Nombre:</strong></span> <br class="d-md-none d-lg-none" />
+                    <span class="align-middle d-md-none d-lg-none titulo-campos-responsive"><strong>Nombre:</strong></span> <br class="d-md-none d-lg-none" />
                     <span class="align-middle">@Html.DisplayFor(modelItem => item.Nombre) </span>
                 </div>
                 <div class="container-usuarios_info col-md-3 col-sm-6 align-self-center">
-                    <span class="align-middle d-md-none d-lg-none"><strong>Correo:</strong></span>
+                    <span class="align-middle d-md-none d-lg-none titulo-campos-responsive"><strong>Correo:</strong></span>
                     <span class="align-middle"> @Html.DisplayFor(modelItem => item.Correo)</span>
                 </div>
             
