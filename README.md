@@ -65,7 +65,8 @@ Links a los recursos utilizados para este proyecto:
 - [Visual Studio](https://visualstudio.microsoft.com/es/vs/ "Visual Studio")
 
 
-
+panel de administración
+[![](https://i.imgur.com/pU8BE59.png)](https://i.imgur.com/pU8BE59.png)
 
 
 
