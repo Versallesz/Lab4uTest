@@ -14,13 +14,13 @@ namespace Lab4uTest.Controllers
     {
         private Lab4UEntities db = new Lab4UEntities();
 
-        // GET: Usuarios
+        // GET: Usuarios   Listar los usuarios de la bd
         public ActionResult Index()
         {
             return View(db.Usuarios.ToList());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: Usuarios/Details/id  Mostrar el usuario seleccionado en la página de detalle
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,20 +35,19 @@ namespace Lab4uTest.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Create
+        // GET: Usuarios/Create 
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Usuarios/Create   Crear un usuario
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Nombre,Correo")] Usuario usuario)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) //corre validaciones implementadas del modelo 
             {
                 db.Usuarios.Add(usuario);
                 db.SaveChanges();
@@ -58,7 +57,7 @@ namespace Lab4uTest.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Usuarios/Edit/id
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,9 +72,8 @@ namespace Lab4uTest.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Usuarios/Edit/id    Editar el usuario por id
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Nombre,Correo")] Usuario usuario)
@@ -89,7 +87,7 @@ namespace Lab4uTest.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: Usuarios/Delete/id    Borrar usuario por id
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +102,7 @@ namespace Lab4uTest.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Delete/5
+        // POST: Usuarios/Delete/id
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
