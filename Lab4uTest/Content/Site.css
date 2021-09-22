@@ -1,0 +1,185 @@
+﻿/* ***************** ELEMENTOS GLOBALES *****************  */
+:root {
+    --background-body: white;
+    --primary-color: hsl(180, 29%, 50%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* Adaptacion para tener rem con la medida de pixel (1.2rem -> 12px)*/
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 20px;
+    background-color: var(--background-body);
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+/* ***************** /ELEMENTOS GLOBALES *****************  */
+
+/* ***************** ELEMENTOS GENERALES *****************  */
+.btn{
+    font-size:1.5rem;
+    border-radius:15px;
+}
+
+.navbar {
+    /*background: rgb(245,242,254);
+    background: linear-gradient(163deg, rgba(245,242,254,1) 13%, rgba(56,179,214,0.9054972330729166) 52%, rgba(0,212,255,1) 100%);*/
+    
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black; /*cambiar*/
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.mensaje-validacion-form{
+    font-size:1.4rem;
+}
+
+
+/* ***************** /ELEMENTOS GENERALES *****************  */
+
+/* ***************** INICIO *****************  */
+
+.jumbotron, .header-administrador {
+    border-radius: 15px;
+    background-image: url('img/bg-header-desktop.svg');
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron h1{
+    padding:10px;
+    font-size:3.8rem;
+}
+.jumbotron p{
+    padding:12px;
+    font-size:2rem;
+}
+.inicio-informaciones h2{
+    font-size:2.8rem;
+}
+.inicio-informaciones p{
+    font-size:1.4rem;
+}
+/* ***************** /INICIO *****************  */
+
+/* ***************** VISTA USUARIOS *****************  */
+.header-administrador {
+    
+    padding: 18px;
+    margin-top:35px;
+    min-height: 90px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 10px 14px 6px #e2e1e1;
+    box-shadow: 5px 10px 14px 6px #e2e1e1;
+}
+
+.titulos_datos div{
+    font-size:1.5rem;
+}
+
+.header-administrador h5 {
+    font-size: 1.6rem;
+}
+.header-administrador a, .container-usuarios_acciones a {
+    padding:4px 8px;
+    font-size:1.4rem;
+    
+}
+
+.container-usuarios {
+    min-height: 70px;
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 1px 10px 10px 1px;
+    -webkit-box-shadow: 0px 5px 6px -2px rgba(0,0,0,0.33);
+    box-shadow: 0px 5px 6px -2px rgba(0,0,0,0.33);
+}
+
+.container-usuarios_info span{
+    font-size:1.5rem;
+}
+.container-usuarios_acciones a{
+    margin:5px;
+    padding:5px;
+}
+/* ***************** /VISTA USUARIOS *****************  */
+
+/* ***************** CREAR USUARIOS *****************  */
+
+
+/* ***************** /CREAR USUARIOS *****************  */
+
+
+
+
+
+/* ***************** EDITAR USUARIOS *****************  */
+.seccion-espacios{
+    padding-top:5%;
+    margin-bottom:10%;
+}
+
+.formulario-estilos, .informacion-usuarios {
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 10px 14px 6px #e2e1e1;
+    box-shadow: 5px 10px 14px 6px #e2e1e1;
+}
+.formulario-estilos .control-label{
+    font-size: 1.4rem;
+}
+.formulario-estilos .form-control{
+    border-radius:15px;
+    font-size:1.4rem;
+}
+
+.img-formularios {
+    margin-left: 20%;
+}
+
+/* ***************** /EDITAR USUARIOS *****************  */
+
+
+
+/* ***************** DETALLE USUARIO *****************  */
+.informacion-usuarios .detalles-campo{
+    font-size:1.3rem;
+}
+.informacion-usuarios .detalles-texto {
+    font-size:1.5rem;
+}
+
+
+/* ***************** /DETALLE USUARIO *****************  */
+
+/* ***************** BORRAR USUARIO *****************  */
+.aviso-borrar-usuario {
+    font-size:2.8rem;
+}
+
+
+/* ***************** /BORRAR USUARIO *****************  */
+
+
